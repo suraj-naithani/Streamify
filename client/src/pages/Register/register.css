@@ -1,0 +1,126 @@
+.registerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 100px;
+}
+
+.registerForms {
+    border: 1px solid #ededed;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 10px;
+}
+
+.passwordFiled {
+    position: relative;
+}
+
+.password {
+    width: 100%;
+}
+
+.eyeIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #868686;
+    cursor: pointer;
+}
+
+.heading {
+    font-size: 28px;
+    text-align: center;
+}
+
+.registerForm {
+    width: 300px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.registerFormInput {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.orOption {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.orOption span {
+    border-left: 130px solid wheat;
+    height: 1px;
+}
+
+.text {
+    text-align: center;
+}
+
+.googleButton {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.googleButtons {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .registerContainer {
+        padding-top: 50px;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+    .text {
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+
+    .registerContainer {
+        padding-top: 50px;
+    }
+
+    .registerForm {
+        width: 290px;
+    }
+
+    .registerForms {
+        padding: 10px;
+    }
+
+    .orOption span {
+        border-left: 125px solid wheat;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .registerForm {
+        width: 250px;
+    }
+
+    .orOption span {
+        border-left: 70px solid wheat;
+    }
+}

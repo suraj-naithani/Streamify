@@ -1,0 +1,77 @@
+.uploadContainer {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer {
+    background-color: #0f0f0f;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    width: 600px;
+    height: max-content;
+}
+
+.form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form h1 {
+    font-weight: 400;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputField {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.input {
+    border-radius: 7px;
+    height: 40px;
+    padding: 10px;
+    background: #252833;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.inputs textarea {
+    resize: none;
+    height: 250px;
+}
+
+@media screen and (max-width: 768px) {
+    .formContainer {
+        width: 400px;
+    }
+
+    .form h1 {
+        font-weight: 400;
+        font-size: 26px;
+    }
+
+    .form {
+        gap: 20px;
+    }
+
+    .inputs textarea {
+        height: 190px;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .formContainer {
+        width: 300px;
+    }
+}

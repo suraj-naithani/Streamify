@@ -1,0 +1,81 @@
+.profileImage img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 24px;
+}
+
+.profileDetails h1 {
+    font-weight: 550;
+}
+
+hr {
+    color: #000000;
+}
+
+
+.yourVideo {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.profileCard {
+    position: relative;
+}
+
+.updateIcons {
+    position: absolute;
+    z-index: 10;
+    right: 5px;
+    top: 5px;
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .profileDetails h1 {
+        font-size: 30px;
+    }
+
+    .profileDetails p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profileDetails h1 {
+        font-size: 26px;
+        font-weight: 400;
+    }
+
+    .profileDetails p {
+        font-size: 15px;
+    }
+
+    .profileImage img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+@media screen and (max-width: 479.5px) {
+    .profileDetails h1 {
+        font-size: 24px;
+    }
+
+    .profileDetails p {
+        font-size: 14px;
+    }
+
+    .profileImage img {
+        width: 70px;
+        height: 70px;
+    }
+}

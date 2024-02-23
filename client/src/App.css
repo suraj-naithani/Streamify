@@ -1,0 +1,54 @@
+.icons {
+    font-size: 25px;
+    color: #edecec;
+}
+
+.icons:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.mainContainer {
+    max-width: 1500px;
+    /* min-height: 100vh; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.button {
+    border-radius: 3px;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #ba72b3;
+    color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+    .icons {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .icons {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .icons {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .icons {
+        font-size: 18px;
+    }
+}

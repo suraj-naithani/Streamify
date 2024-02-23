@@ -1,0 +1,176 @@
+.navContainer {
+    height: 75px;
+    margin: 0 auto;
+    padding: 12px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.searchField {
+    outline: none;
+    height: 45px;
+    border-radius: 10px;
+    width: 40rem;
+    border: none;
+    padding: 0px 20px;
+    font-size: 16px;
+    color: #edecec;
+    background-color: #252833;
+}
+
+
+.searchIcon {
+    position: absolute;
+    right: 12px;
+    top: 6px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.burgerSection {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #252833;
+    width: 250px;
+    height: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 99;
+}
+
+.burgerSectionHidden {
+    display: none !important;
+}
+
+.burgerIcon {
+    z-index: 9999;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1440px) {
+    .searchField {
+        height: 40px;
+        width: 36rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .searchField {
+        height: 38px;
+        width: 27rem;
+    }
+
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .navContainer {
+        padding: 12px 14px 12px 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .username {
+        display: none;
+    }
+
+    .logo h1 {
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    .logo img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .searchField {
+        height: 35px;
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .searchField {
+        height: 35px;
+        width: 18rem;
+        font-size: 15px;
+    }
+
+    .navContainer {
+        padding: 12px 12px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .searchField {
+        /* width: 17rem; */
+    }
+
+    .navContainer {
+        padding: 10px 10px;
+    }
+
+    .logo img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .searchField {
+        width: 15rem;
+        font-size: 14px;
+    }
+
+    .navContainer {
+        padding: 8px 6px;
+    }
+}

@@ -1,0 +1,323 @@
+.video {
+    padding: 2% 5%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.videoContainer {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.player video {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.descriptionTag {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 90%;
+}
+
+.descriptionTagContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descTitle {
+    font-size: 25px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.likeContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.likeCount {
+    text-align: center;
+    font-size: 12px;
+}
+
+.channelDetails {
+    display: flex;
+    justify-content: space-between;
+}
+
+.channelName {
+    display: flex;
+    gap: 15px;
+}
+
+.desc-img-icon img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.SubChannelName {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.descChannelName {
+    color: white;
+    font-size: 18px;
+}
+
+.subButton {
+    width: max-content;
+    height: max-content;
+    padding: 3px 10px;
+    outline: none;
+    background: none;
+    border: 1px solid #fff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.descriptionContainer {
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    color: white;
+    padding: 10px 20px 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.descriptionViews {
+    display: flex;
+    gap: 10px;
+    color: #b1b1b1;
+}
+
+.descriptionText {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.comments {
+    display: grid;
+    gap: 30px;
+    width: 90%;
+}
+
+.commentBox {
+    display: grid;
+    gap: 4px;
+}
+
+
+.totalComments {
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.commentInputs {
+    display: flex;
+}
+
+.commentInput {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    border-bottom: 1px solid;
+    font-size: 16px;
+    padding: 7px;
+    width: 100%;
+}
+
+.allComments {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.allComment,
+.commentName {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.comment-img-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.commentChannelName {
+    font-size: 17px;
+}
+
+.commentTime,
+.subCount {
+    font-size: 16px;
+    color: #828282;
+    font-weight: 300;
+}
+
+.comment {
+    font-weight: 300;
+}
+
+.recommendationContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.recommendationContainer p {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1447px) {
+    .video {
+        padding: 2% 5%;
+    }
+}
+
+@media screen and (max-width: 1264px) {
+    .player video {
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .player video {
+        max-width: 650px;
+    }
+
+    .video {
+        gap: 20px;
+        padding: 2% 5%;
+    }
+
+    .descTitle {
+        font-size: 22px;
+    }
+
+    .descChannelName {
+        font-size: 16px;
+    }
+
+    .details p,
+    .subCount,
+    .subButton {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .recommendationContainer {
+        display: none;
+    }
+
+    .videoContainer {
+        width: 100%;
+    }
+
+    .player video {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .descriptionText {
+        font-size: 14px;
+    }
+
+    .player video {
+        height: auto;
+    }
+
+    .descTitle {
+        font-size: 17px;
+    }
+
+    .descChannelName,
+    .commentInput,
+    .commentChannelName,
+    .commentTime,
+    .subCount,
+    .subButton,
+    .comment {
+        font-size: 15px;
+    }
+
+    .totalComments {
+        font-size: 16px;
+    }
+
+    .descriptionTag {
+        width: 100%;
+    }
+
+    .comments {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 615px) {
+
+    .commentTime,
+    .subCount,
+    .descriptionText,
+    .subButton {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .descTitle,
+    .totalComments {
+        font-size: 16px;
+    }
+
+    .descChannelName,
+    .commentInput,
+    .commentChannelName,
+    .comment {
+        font-size: 14px;
+    }
+
+    .commentTime,
+    .subCount,
+    .descriptionText,
+    .subButton {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .subButton {
+        font-size: 10px;
+    }
+}
