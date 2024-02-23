@@ -9,7 +9,7 @@ export const AuthProvider = ({ children }) => {
 
     const authorizationToken = `Bearer ${token}`;
 
-    const API = "http://localhost:8000";
+    const API = "https://streamify-api-backend.vercel.app";
 
     const storeTokenInLS = (serverToken) => {
         setToken(serverToken);
